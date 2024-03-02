@@ -1,0 +1,9 @@
+.gpt3__brand {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.gpt3__brand img {
+  width: 112px;
+  height: 24px;
+}

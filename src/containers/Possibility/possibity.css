@@ -1,0 +1,68 @@
+
+.poss {
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+.poss-header h1 {
+  width: 426px;
+  margin-bottom: 15px;
+}
+.poss-header a {
+  color: #ff8a71;
+  transition: 0.5s;
+
+}
+.poss-header a:hover {  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+}
+.poss-content {
+  flex: 1;
+}
+.poss-content .box {
+  justify-content: space-between;
+}
+.poss-content .box:not(:last-child) {
+  margin-bottom: 3rem; 
+}
+
+.poss-content .box h1 {
+  color: #fff;
+  font-size: 18px;
+  width: 182px;
+  position: relative;
+}
+.poss-content h1::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  background: var(--gradient-text);
+  top: -10px;
+  left: 0;
+  border-radius: 25px;
+}
+.poss-content .box p {
+  width: 334px;
+  color: #81afdd;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+
+@media (max-width:650px) {
+  .poss-header h1 {
+    font-size: 20px;
+    width: 100%;  }
+  .poss-content .box  {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .poss-content .box h1 {
+    margin-bottom: 10px;
+  } 
+}

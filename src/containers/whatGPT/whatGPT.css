@@ -1,0 +1,160 @@
+.gpt-3whatgpt-3__items {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+  background: var(--color-footer);
+
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+}
+
+/* ___________headeing______________ */
+.gpt-3-heading {
+  padding-bottom: 4rem;
+}
+.gpt-3-heading h1 {
+  width: 80%;
+  color: #fff;
+  position: relative;
+  font-size: 24px;
+}
+.gpt-3-heading h1::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  background: var(--gradient-text);
+  top: -10px;
+  left: 0;
+  border-radius: 25px;
+}
+.gpt-3-heading p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #81afdd;
+}
+@media (max-width: 1000px) {
+  .gpt-3-heading {
+    flex-wrap: wrap;
+  }
+  .gpt-3-heading h1 {
+    margin-bottom: 10px;
+  }
+}
+/* ___________sup-headeing______________ */
+
+.gpt-3-sup {
+  justify-content: space-between;
+  padding-bottom: 95px;
+}
+.gpt-3-sup h1 {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 34px;
+  width: 472px;
+}
+.gpt-3-sup a {
+  font-size: 16px;
+  color: #ff8a71;
+  transition: 0.5s;
+}
+.gpt-3-sup a:hover {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+@media (max-width: 920px) {
+  .gpt-3-sup {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+  }
+  .gpt-3-sup h1 {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 900;
+  }
+}
+/* ___________BOXES______________ */
+
+.gpt-content {
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.gpt-content h1 {
+  position: relative;
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 13px;
+}
+.gpt-content h1::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  background: var(--gradient-text);
+  top: -10px;
+  left: 0;
+  border-radius: 25px;
+}
+.gpt-content p {
+  line-height: 30px;
+  font-size: 16px;
+  color: #81AFDD;
+  font-weight: 500;
+  width: 330px;
+}
+
+@media (max-width:470px) {
+  .gpt-content p {
+width: 100%;  }
+}
+
